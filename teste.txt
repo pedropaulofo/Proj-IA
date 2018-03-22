@@ -1,0 +1,3 @@
+oiproibida(abacate).
+proibida(abacate).
+proibida(abacate).

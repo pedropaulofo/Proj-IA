@@ -1,0 +1,81 @@
+% Aluno: Pedro Paulo Freire Oliveira
+% Disciplina: Inteligencia Artificial 2017.2
+% Professor: Herman Martin Gomes
+%
+%
+% Código prolog que analisa quais palavras pertencem a casos proibitivos
+% para suceder a crase do caso singular (à) ou plural (às) com base na
+% léxica da palavra.
+
+
+% ARTIGOS
+%
+proibida(a).
+proibida(uma).
+proibida(as).
+proibida(umas).
+
+% PRONOMES
+%
+proibida(ela).
+proibida(elas).
+
+proibida(esta).
+proibida(estas).
+proibida(essa).
+proibida(essas).
+proibida(aquela).
+proibida(aquelas).
+
+proibida(alguma).
+proibida(algumas).
+proibida(nenhuma).
+proibida(nenhumas).
+proibida(muita).
+proibida(muitas).
+proibida(pouca).
+proibida(poucas).
+proibida(toda).
+proibida(todas).
+proibida(outra).
+proibida(outras).
+proibida(certa).
+proibida(certas).
+proibida(quanta).
+proibida(quantas).
+proibida(cada).
+proibida(nada).
+
+proibida(cuja).
+proibida(cujas).
+
+% ADVERBIOS
+%
+proibida(nunca).
+proibida(ainda).
+proibida(apenas).
+proibida(afora).
+proibida(acima).
+proibida(depressa).
+proibida(ora).
+proibida(Palavra) :-  string_length(Palavra, L), L > 5, substring(Palavra, L-4, 5, mente), Palavra \== semente.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
